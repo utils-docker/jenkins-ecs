@@ -1,7 +1,11 @@
 amazon-ecs:latest
 aws-credentials:latest
 aws-java-sdk:latest
+apache-httpcomponents-client-4-api:latest
 ace-editor:latest
+jquery:latest
+javadoc:latest
+jsch:latest
 ant:latest
 antisamy-markup-formatter:latest
 authentication-tokens:latest
