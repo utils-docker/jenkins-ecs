@@ -9,5 +9,3 @@ ENV JAVA_OPTS -Dorg.eclipse.jetty.server.Request.maxFormContentSize=100000000 \
  			  -Dorg.apache.commons.jelly.tags.fmt.timeZone=America/Los_Angeles \
  			  -Dhudson.diyChunking=false \
  			  -Djenkins.install.runSetupWizard=false
-
-COPY jenkins-home/init.groovy.d $JENKINS_REF/init.groovy.d/
