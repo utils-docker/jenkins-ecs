@@ -1,12 +1,14 @@
+FROM jenkins/jenkins:lts                  
+
 ENV JENKINS_REF /usr/share/jenkins/ref   
 
 COPY jenkins-home/plugins.txt $JENKINS_REF/                                        
 RUN /usr/local/bin/plugins.sh $JENKINS_REF/plugins.txt                             
 
-ENV JAVA_OPTS -Dorg.eclipse.jetty.server.Request.maxFormContentSize=100000000 \    
-                          -Dorg.apache.commons.jelly.tags.fmt.timeZone=America/Los_Angeles \
-                          -Dhudson.diyChunking=false \                             
-                          -Djenkins.install.runSetupWizard=false                   
+ENV JAVA_OPTS -Dorg.eclipse.jetty.server.Request.maxFormContentSize=100000000 \
+  -Dorg.apache.commons.jelly.tags.fmt.timeZone=America/Los_Angeles \
+  -Dhudson.diyChunking=false \
+  -Djenkins.install.runSetupWizard=false
 WORKDIR /tmp        
 
 USER root           
