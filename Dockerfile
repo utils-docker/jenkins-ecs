@@ -6,7 +6,7 @@ COPY jenkins-home/plugins.txt $JENKINS_REF/
 RUN /usr/local/bin/plugins.sh $JENKINS_REF/plugins.txt                             
 
 ENV JAVA_OPTS -Dorg.eclipse.jetty.server.Request.maxFormContentSize=100000000 \
-  -Dorg.apache.commons.jelly.tags.fmt.timeZone=America/Los_Angeles \
+  -Dorg.apache.commons.jelly.tags.fmt.timeZone=America/Sao_Paulo \
   -Dhudson.diyChunking=false \
   -Djenkins.install.runSetupWizard=false
 WORKDIR /tmp        
