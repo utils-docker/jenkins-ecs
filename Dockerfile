@@ -12,7 +12,7 @@ ENV JAVA_OPTS -Dorg.eclipse.jetty.server.Request.maxFormContentSize=100000000 \
 WORKDIR /tmp        
 
 USER root           
-RUN curl -s https://get.docker.com/builds/Linux/x86_64/docker-18.09.6.tgz > docker-18.09.6.tgz \
+RUN curl -s hhttps://download.docker.com/linux/static/stable/x86_64/docker-18.09.6.tgz > docker-18.09.6.tgz \
   && tar xzvf docker-18.09.6.tgz \    
   && mv docker/docker /usr/local/bin \   
 && rm -r docker docker-18.09.6.tgz
