@@ -17,5 +17,3 @@ RUN curl -s https://download.docker.com/linux/static/stable/x86_64/docker-18.09.
   && mv docker/docker /usr/local/bin \
   && rm -r docker docker-18.09.6.tgz \
   && /usr/local/bin/plugins.sh $JENKINS_REF/plugins.txt
-  
- USER jenkins
